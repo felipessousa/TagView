@@ -181,11 +181,7 @@ public class TagView extends RelativeLayout {
             View tagLayout = mInflater.inflate(R.layout.tagview_item, null);
             tagLayout.setId(listIndex);
 
-            if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
-                tagLayout.setBackgroundDrawable(getSelector(tag));
-            } else {
-                tagLayout.setBackground(getSelector(tag));
-            }
+            tagLayout.setBackground(getSelector(tag));
 
             // tag text
             TextView tagView = (TextView) tagLayout.findViewById(R.id.tv_tag_item_contain);
