@@ -30,7 +30,7 @@ repositories {
  ```
  ``` java
 dependencies {
-    compile 'com.github.Cutta:TagView:1.3'
+    compile 'com.github.fssilva:tagview:1.4.0'
 }
  ```
 # Usage
